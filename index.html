@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 	<title>Decodificador de Texto!</title>
 </head>
 <body>
@@ -20,8 +21,8 @@
 					<p class="alerta">Apenas letras minúsculas e sem acento.</p>
 				</div>
 				<div class="buttons">
-					<input class="btnCriptografar" type="submit" value="Criptografar">
-		        	<input class="btnDescriptografar" type="submit" value="Descriptografar">
+					<button class="btnCriptografar" type="button" onclick="btnCriptografar()">Criptografar</button>
+		        	<input class="btnDescriptografar" onclick= "btnDescriptografar()" type="submit" value="Descriptografar" >
 				</div>
 			</form>
 		</section>
