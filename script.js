@@ -1,5 +1,5 @@
 const inputText = document.querySelector(".inputText");
-const message = document.querySelector(".result")
+const message = document.querySelector(".output")
 
 function btnCriptografar(){
     const textCriptado = criptografar(inputText.value);
@@ -20,22 +20,23 @@ function criptografar(stringCriptada){
     return stringCriptada;
 }
 
+
 function btnDescriptografar(){
-    const textDescriptado = criptografar(inputText.value);
-    message.value = textDescriptado
+    const textCriptado = descriptar(inputText.value)
+    message.value = textCriptado;
 }
-
-function desCriptografar(stringDescriptografada){
-    let matriz = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
-    stringDescriptografada = stringDescriptografada.toLowerCase();
-
-    for(let i = 0; i < matriz.length; i++){
-        if(stringDescriptografada.includes(matriz[i][1])){
-            stringDescriptografada = stringDescriptografada.replaceAll(matriz[i][1], matriz[i][0]);
+    
+function descriptar(stringDescriptada) {
+    let matriz = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o","ober"], ["u","ufat"]];
+    stringDescriptada = stringDescriptada.toLowerCase();
+    
+    for(let i=0; i < matriz.length; i++) {
+        if(stringDescriptada.includes(matriz[i][1])) {
+            stringDescriptada = stringDescriptada.replaceAll(matriz[i][1], matriz[i][0])
         }
     }
-
-    return stringDescriptografada;
+    
+    return stringDescriptada;
 }
 
 
