@@ -1,9 +1,12 @@
+const btnCopy = document.querySelector(".btnCopy");
+const divTemp = document.querySelector(".divTemp");
 const inputText = document.querySelector(".inputText");
-const message = document.querySelector(".output")
+const message = document.querySelector(".output");
 
 function btnCriptografar(){
     const textCriptado = criptografar(inputText.value);
     message.value = textCriptado;
+    showDisplay()
 }
 
 
@@ -39,6 +42,16 @@ function descriptar(stringDescriptada) {
     return stringDescriptada;
 }
 
+function copy() {
+    const texCopy = document.querySelector(".output");
+    texCopy.select();
+    navigator.clipboard.writeText(texCopy.value)
+    texCopy.value = texCopy.value;
+}
 
-
+function showDisplay(){
+    divTemp.style.display = "none";
+    btnCopy.style.display = "flex";
+    message.style.display = "flex";
+}
 
