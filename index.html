@@ -3,43 +3,45 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Decodificador de Texto!</title>
 </head>
 <body>
 	<header>
-		<img class="logo" src="img/logoA.png" alt="Logo da Alura, letra 'A' na cor azul.">
+		<img class="logoA" src="img/logoA.png" alt="Logo da Alura, letra 'A' na cor azul.">
 	</header>
 
-	<main>
-		<section>
+	<main class="main">
+		<section class="divMain">
 			<form>
-				<textarea class="textInput" type="text" placeholder="Digite seu texto"></textarea>
-				<div class="Divform">
-					<img src="img/!.png" class="alertImage"alt="Exclamação com intuito de alerta.">
-					<p class="alerta">Apenas letras minúsculas e sem acento.</p>
-				</div>
+
+				<textarea  class="inputText" placeholder="Digite seu texto aqui" required autofocus></textarea>
+
+				<div class="divForm">
+					<img class="logoAlert" src="img/!.png" class="alertImage"alt="Exclamação com intuito de alerta.">
+					<p class="alert">Apenas letras minúsculas e sem acento.</p>
+				</div>	
+
 				<div class="buttons">
 					<button class="btnCriptografar" type="button" onclick="btnCriptografar()">Criptografar</button>
-		        	<input class="btnDescriptografar" onclick= "btnDescriptografar()" type="submit" value="Descriptografar" >
-				</div>
+					<button class="btnDescriptografar" type="button" onclick="btnDescriptografar()">Descriptografar</button>
+				</div>	
+
 			</form>
 		</section>
-
-		<section class="message">
-			<div class="divResult">
+		<section class="outputText">	
+			<div class="divTemp">
 				<img class="imgPersona"src="img/persona.png">
 				<h2>Nenhuma mensagem encontrada</h2>
-				<h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
-			</div>
-			<div class="textResul">
-				<textarea class="result" type="text" placeholder="Nenhuma mensagem"></textarea>
-				<input class="btnCopiar" type="submit" value="Copiar" id="btnCopiar">
+				<h3>Digite um texto que você deseeja criptografar ou descriptografar.</h3>
 			</div>
 
+			<div class="divSpawn">	
+				<textarea class="output" type="text" placeholder="Nenhuma mensagem"></textarea>
+				<button class="btnCopy" type="button" onclick="">Copiar</button>
+			</div>
 		</section>
 	</main>
-
 </body>
 </html>

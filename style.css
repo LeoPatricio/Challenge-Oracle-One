@@ -1,104 +1,179 @@
 * {
     background: #E9ECF8;
+  }
+
+.logoA{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+  }
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;  
+  }
+
+.inputText {
+    position: absolute;
+    padding: 10px 10px;
+    width: 680px;
+    height: 288px;
+    left: 145px;
+    top: 220px;
+    border-radius: 30px;
+    border: none;
+
+    font-weight: 400px;
+    font-size: 30px;
+
+    color: #0A3871;
 }
 
-.logo{
-    position: absolute;
-    left: 70px;
-    top: 40px;
-
-}
-
-.Divform{
-    position: absolute;
+.divForm{
+    position: relative;
+    width: 300px;
     height: 20px;
-    left: 20%;
-    top: 650px;
-}
+    left: 160px;
+    top: 535px;
+    display: flex;
+    align-items: center;
 
-.textInput{
-    position: absolute; 
-    width: 600px;
-    height: 400px;
-    left: 20%;
-    top: 170px;
-}
-
-.alerta{
-    position: static;
-    height: 60px;
-    left: 20px;
-    padding-left: 30px;
-}
-
-.alertImage{
-    position: absolute;
-    top: 10px;
+    color: #495057;
 }
 
 .buttons{
+    display: flex;
+    align-items: flex-start;
     position: absolute;
-    width: 500px;
+    width: 680px;
     height: 70px;
-    left: 20%;
-    top: 700px;
-}
-
-.message{
-    position: absolute;
-    width: 400px;
-    height: 750px;
-    left: 70%;
-    top: 20px;
-}
-
-.message h2{
-    position: static;
-    margin: 0 30px;
-    width: 340px;
-    height: 50px;
-    top: 80px;
-
-    text-align: center;
-
-    background: #FFFFFF;
-}
-
-.message h3{
-    position: static;
-    margin: 0 30px;
-    width: 350px;
-    height: 50px;
-    top: 80px;
-
-    text-align: center;
-
-     background: #FFFFFF;
-}
-
-.divResult{
-    position: absolute;
-    width: 400px;
-    height: 850px;
     left: 10%;
-    top: 20px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
+    top: 650px;
+}
+.btnCriptografar{
+    display: flex;
+    margin: 0 15px;
+    padding: 20px;
+    border-radius: 30px;
+    justify-content: center;
+
+    position: static;
+    width: 200px;
+    height: 60px;
+
+    background: #0A3871;
+    font-size: 25px;
+    text-align: center;
+
+    color: #FFFFFF;
+    line-height: 20px;
 }
 
-.imgPersona{
-    width: 70%;
-    padding: 50px;
-    margin: 60px 20px;
-    top: 50px;
+.btnDescriptografar{
+    display: flex;
+    padding: 20px;
+    border-radius: 30px;
+    justify-content: center;
+
+    position: static;
+    width: 200px;
+    height: 60px;
+
+    background: #0A3871;
+    font-size: 25px;
+    text-align: center;
+
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+.divTransparent{
     background: #FFFFFF;
 }
 
-.textResul{
+.outputText{
     position: absolute;
-    width: 350px;
-    height: 780px;
-    left: 70px;
-    background: transparent;
+    width: 400px;
+    height: 700px;
+    left: 65%;
+    top: 30px;
+    padding-left: 20px;
+    padding-top: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 35px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 35px;
+}
+
+.outputText h2{
+    position: static;
+    margin: 16px 0px;
+    width: 375px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+
+    color: #343A40;
+    background: #FFFFFF;
+}
+
+.outputText h3{
+    position: static;
+    margin: 16px 0px;
+    width: 375px;
+    height: 40px;
+    top: 74px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  
+    color: #343A40;
+    background: #FFFFFF;
+}
+
+.divTemp, .divTemp img{
+    padding-top: 40px;
+    background: #FFFFFF;
+}
+
+.output{
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    left: 60px;
+    top: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 160%;
+    border:none;
+    background:transparent;
+
+    color: #495057;
+   
+  }
+
+.output:focus { 
+    border: none;
+    outline: none;
+   }
+
+.btnCopy{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0px 8px;
+    padding: 24px;
+    line-height: 20px;
+    width: 340px;
+    height: 70px;
+    left: 30px;
+    top: 660px;
+    border: 2px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    font-size: 30px;  
+    color: #0A3871;
 }

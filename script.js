@@ -1,4 +1,4 @@
-const inputText = document.querySelector(".textInput");
+const inputText = document.querySelector(".inputText");
 const message = document.querySelector(".result")
 
 function btnCriptografar(){
