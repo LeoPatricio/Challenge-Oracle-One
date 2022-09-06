@@ -1,6 +1,6 @@
 # Challenge ONE | Lógica de Programação - Decodificador de texto
 
-<p text-align="center" >
+<p align="center" >
      <img width="800" heigth="400" src="/img/preview.PNG">
 </p>
 
